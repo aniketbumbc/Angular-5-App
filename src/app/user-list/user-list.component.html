@@ -2,7 +2,7 @@
   user-list works!
 </p>
 <ul>
-  <li *ngFor="let Name of names">
-  <app-user-item></app-user-item>
+  <li *ngFor="let individualUserName of names">
+  <app-user-item [name]="individualUserName"></app-user-item>  <!-- call name form user-item comp -->
 </li>
 </ul>
